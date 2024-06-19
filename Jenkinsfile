@@ -1,6 +1,7 @@
 pipeline {
     agent any
-        stages {
+    
+    stages {
         stage('Clone Repository') {
             steps {
                 // Clona el repositorio
@@ -8,11 +9,12 @@ pipeline {
             }
         }
 
-   stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
-                
+                // Cambia al directorio del repositorio clonado
+                dir('hola-mundo.py') {
+                    echo 'Hello World'
+                }
             }
         }
     }
