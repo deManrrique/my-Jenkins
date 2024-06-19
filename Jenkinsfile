@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Clona el repositorio
-                sh 'git clone https://github.com/deManrrique/hola-mundo.py.git'
+                sh 'git clone https://github.com/deManrrique/archivo_python.git
             }
         }
 
